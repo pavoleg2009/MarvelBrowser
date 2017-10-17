@@ -13,7 +13,20 @@
 		28FAD92E1F95D9E300318540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FAD92D1F95D9E300318540 /* Assets.xcassets */; };
 		28FAD9311F95D9E300318540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FAD92F1F95D9E300318540 /* LaunchScreen.storyboard */; };
 		28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9381F95F7F400318540 /* MainTableViewController.swift */; };
+		28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */; };
+		28FAD9451F95FE1000318540 /* test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9441F95FE1000318540 /* test1Tests.swift */; };
+		28FAD94C1F960A1900318540 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93B1F95FC0D00318540 /* ApiKey.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28FAD9471F95FE1000318540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28FAD91B1F95D9E300318540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28FAD9221F95D9E300318540;
+			remoteInfo = test1;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		28FAD9231F95D9E300318540 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,23 @@
 		28FAD9301F95D9E300318540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28FAD9321F95D9E300318540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FAD9381F95F7F400318540 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		28FAD93B1F95FC0D00318540 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarverlAuthentication.swift; sourceTree = "<group>"; };
+		28FAD9421F95FE1000318540 /* test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FAD9441F95FE1000318540 /* test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1Tests.swift; sourceTree = "<group>"; };
+		28FAD9461F95FE1000318540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FAD94D1F96226300318540 /* test1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test1-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		28FAD9201F95D9E300318540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FAD93F1F95FE1000318540 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				28FAD9251F95D9E300318540 /* test1 */,
+				28FAD9431F95FE1000318540 /* test1Tests */,
 				28FAD9241F95D9E300318540 /* Products */,
+				28FAD94D1F96226300318540 /* test1-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				28FAD9231F95D9E300318540 /* test1.app */,
+				28FAD9421F95FE1000318540 /* test1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +85,7 @@
 		28FAD9251F95D9E300318540 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				28FAD93A1F95FA9500318540 /* ApiClient */,
 				28FAD9261F95D9E300318540 /* AppDelegate.swift */,
 				28FAD9281F95D9E300318540 /* ViewController.swift */,
 				28FAD92A1F95D9E300318540 /* Main.storyboard */,
@@ -65,6 +95,24 @@
 				28FAD9381F95F7F400318540 /* MainTableViewController.swift */,
 			);
 			path = test1;
+			sourceTree = "<group>";
+		};
+		28FAD93A1F95FA9500318540 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				28FAD93B1F95FC0D00318540 /* ApiKey.swift */,
+				28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		28FAD9431F95FE1000318540 /* test1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				28FAD9441F95FE1000318540 /* test1Tests.swift */,
+				28FAD9461F95FE1000318540 /* Info.plist */,
+			);
+			path = test1Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +135,24 @@
 			productReference = 28FAD9231F95D9E300318540 /* test1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		28FAD9411F95FE1000318540 /* test1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "test1Tests" */;
+			buildPhases = (
+				28FAD93E1F95FE1000318540 /* Sources */,
+				28FAD93F1F95FE1000318540 /* Frameworks */,
+				28FAD9401F95FE1000318540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28FAD9481F95FE1000318540 /* PBXTargetDependency */,
+			);
+			name = test1Tests;
+			productName = test1Tests;
+			productReference = 28FAD9421F95FE1000318540 /* test1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,7 +165,13 @@
 				TargetAttributes = {
 					28FAD9221F95D9E300318540 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+					};
+					28FAD9411F95FE1000318540 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28FAD9221F95D9E300318540;
 					};
 				};
 			};
@@ -117,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				28FAD9221F95D9E300318540 /* test1 */,
+				28FAD9411F95FE1000318540 /* test1Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +205,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28FAD9401F95FE1000318540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,13 +219,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FAD94C1F960A1900318540 /* ApiKey.swift in Sources */,
 				28FAD9291F95D9E300318540 /* ViewController.swift in Sources */,
 				28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */,
 				28FAD9271F95D9E300318540 /* AppDelegate.swift in Sources */,
+				28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FAD93E1F95FE1000318540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FAD9451F95FE1000318540 /* test1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28FAD9481F95FE1000318540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28FAD9221F95D9E300318540 /* test1 */;
+			targetProxy = 28FAD9471F95FE1000318540 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		28FAD92A1F95D9E300318540 /* Main.storyboard */ = {
@@ -278,12 +376,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
 				INFOPLIST_FILE = test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,14 +394,48 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
 				INFOPLIST_FILE = test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28FAD94A1F95FE1100318540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
+				INFOPLIST_FILE = test1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
+			};
+			name = Debug;
+		};
+		28FAD94B1F95FE1100318540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
+				INFOPLIST_FILE = test1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
 			};
 			name = Release;
 		};
@@ -321,6 +456,15 @@
 			buildConfigurations = (
 				28FAD9361F95D9E300318540 /* Debug */,
 				28FAD9371F95D9E300318540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "test1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FAD94A1F95FE1100318540 /* Debug */,
+				28FAD94B1F95FE1100318540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
