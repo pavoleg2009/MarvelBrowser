@@ -67,6 +67,7 @@ class MarverlAuthentication: NSObject {
                 CC_MD5(messageBytes, CC_LONG(stringData.count), digestBytes)
             }
         }
+        
         let md5Hex = digestData.map { String(format: "%02hhx", $0) }.joined()
         
         return md5Hex

@@ -11,4 +11,6 @@ import Foundation
 enum Api {
     static let publicKey = "4d2812c8f36989d808d3205f611093e8"
     static let privateKey = "8dc69af240293c174c839ca7fb80befd607ccff7"
+    static let baseURLString = "http://gateway.marvel.com/v1/public"
+    static let charactersSearchPath = "/characters?nameStartsWith="
 }

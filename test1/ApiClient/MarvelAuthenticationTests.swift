@@ -1,15 +1,9 @@
-//
-//  test1Tests.swift
-//  test1Tests
-//
-//  Created by Oleg Pavlichenkov on 17/10/2017.
-//  Copyright © 2017 Oleg Pavlichenkov. All rights reserved.
-//
+//  MarvelAuthenticationTests.swift
 
 import XCTest
 @testable import test1
 
-class test1Tests: XCTestCase {
+class MarvelAuthenticationTests: XCTestCase {
     
     var sut: MarverlAuthentication!
     
@@ -49,16 +43,16 @@ class test1Tests: XCTestCase {
         XCTAssertEqual(key.count, 40, "Private Key should have 40 characters, but in has \(key.count)")
     }
     
-//    func test_URLParametersShouldHaveTimeStampPublicKeyAndHash() {
-//        let sutWithFakeMD5 = TestMarvelAuthentication()
-//        sutWithFakeMD5.timestamp = "Timestamp"
-//        sutWithFakeMD5.privateKey = "Private"
-//        sutWithFakeMD5.publicKey = "Public"
-//
-//        let params = sutWithFakeMD5.urlParameters;
-//
-//        XCTAssertEqual(params, "&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5", "urlParameters doesn't match API requrements")
-//    }
+    //    func test_URLParametersShouldHaveTimeStampPublicKeyAndHash() {
+    //        let sutWithFakeMD5 = TestMarvelAuthentication()
+    //        sutWithFakeMD5.timestamp = "Timestamp"
+    //        sutWithFakeMD5.privateKey = "Private"
+    //        sutWithFakeMD5.publicKey = "Public"
+    //
+    //        let params = sutWithFakeMD5.urlParameters;
+    //
+    //        XCTAssertEqual(params, "&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5", "urlParameters doesn't match API requrements")
+    //    }
     
     func testMD5_shoulReturnKnownResult() {
         
@@ -79,11 +73,12 @@ class test1Tests: XCTestCase {
         let expectedResult = "&ts=Timestamp&apikey=Public&hash=86588e74427d86da1d5880c33966aaef"
         XCTAssertEqual(params, expectedResult, "urlParameters doesn't match API requrements")
     }
+    
 }
+
 
 //class TestMarvelAuthentication: MarverlAuthentication {
 //    override func MD5(string: String) -> String {
 //        return "MD5\(string)MD5"
 //    }
 //}
-
