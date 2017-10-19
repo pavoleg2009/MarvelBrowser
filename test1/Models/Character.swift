@@ -29,16 +29,16 @@ class Character: NSObject {
     var name: String
     var characterDescription: String
     var modified: Date
-//    var thumbnailPath: String
+    var thumbnailPath: String
     
     // MARK: Life Cycle
-    public init(id: Int, name: String, characterDescription: String, modified: Date/*, thumbnailPath: String*/) {
+    public init(id: Int, name: String, characterDescription: String, modified: Date, thumbnailPath: String) {
         
         self.id = id
         self.name = name
         self.characterDescription = characterDescription
         self.modified = modified
-//        self.thumbnailPath = thumbnailPath
+        self.thumbnailPath = thumbnailPath
     }
     
     override public var description: String {
@@ -54,14 +54,15 @@ extension Character {
             let name = json[Character.ApiKeys.name] as? String,
             let characterDescription = json[Character.ApiKeys.characterDescription] as? String,
             let modifiedString = json[Character.ApiKeys.modified] as? String,
-            let modified = Character.stringToDateFormatter.date(from: modifiedString)
-            //            let thumbnailPath = json[]
+            let modified = Character.stringToDateFormatter.date(from: modifiedString),
+            let thumbnail = (json[Character.ApiKeys.thumbnail] as? [String:String])
             else { return nil }
         
         self.init(id: id,
                   name: name,
                   characterDescription: characterDescription,
-                  modified: modified/*, thumbnailPath: */
+                  modified: modified,
+                  thumbnailPath: "\(thumbnail["path"] ?? "").\(thumbnail["extension"] ?? "")"
         )
     }
     
@@ -83,8 +84,7 @@ extension Character {
         static let characterDescription = "description"
         static let modified = "modified"
         //
-        static let thumbnailPath = "thumbnail.path"
-        static let thumbnailExtension = "thumbnail.path"
+        static let thumbnail = "thumbnail"
     }
 }
 

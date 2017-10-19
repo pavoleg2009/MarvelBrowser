@@ -13,7 +13,6 @@ class CharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var modifiedLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var thumbnailImage: UIImageView!
     
     

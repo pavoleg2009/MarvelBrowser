@@ -16,22 +16,21 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+        initialRequest()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(test(_:)))
-        
     }
     
-    @IBAction func test(_ sender: Any) {
-        print("test")
+    func initialRequest() {
         apiClient.getSearchResults(searchTerm: "Spider") { (characters, string) in
             self.characters = characters
             self.tableView.reloadData()
         }
+    }
+    
+    @IBAction func test(_ sender: Any) {
+//        print("test")
+        
     }
 
     // MARK: - Table view data source
@@ -43,7 +42,6 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print(characters.count)
         return characters.count
     }
 
@@ -58,13 +56,14 @@ class MainTableViewController: UITableViewController {
         cell.nameLabel.text = character.name
         cell.idLabel.text = String(character.id)
         cell.modifiedLabel.text = Character.dateToStringFormatter.string(from: character.modified)
-        cell.descriptionTextView.text = character.characterDescription
+//        cell.descriptionTextView.text = character.characterDescription
+        cell.thumbnailImage.pos_setImage(url: URL(string:character.thumbnailPath))
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160.0
+        return 94
     }
 
     /*
@@ -111,5 +110,6 @@ class MainTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
+

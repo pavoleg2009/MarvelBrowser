@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="characterCell" rowHeight="200" id="5eb-GP-ccL" customClass="CharacterTableViewCell" customModule="test1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="characterCell" rowHeight="94" id="5eb-GP-ccL" customClass="CharacterTableViewCell" customModule="test1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5eb-GP-ccL" id="cNh-XB-qvr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cqN-2g-QeV">
@@ -64,26 +64,14 @@
                                                 <constraint firstAttribute="height" constant="87.5" id="WwX-WG-HKH"/>
                                             </constraints>
                                         </stackView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eMp-xU-89Q">
-                                            <rect key="frame" x="0.0" y="99.5" width="375" height="96"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="cqN-2g-QeV" firstAttribute="leading" secondItem="cNh-XB-qvr" secondAttribute="leadingMargin" id="Hco-1h-46x"/>
-                                        <constraint firstItem="eMp-xU-89Q" firstAttribute="top" secondItem="cqN-2g-QeV" secondAttribute="bottom" constant="4" id="JrI-z4-jXG"/>
-                                        <constraint firstAttribute="bottom" secondItem="eMp-xU-89Q" secondAttribute="bottom" constant="4" id="NBO-AL-fjO"/>
-                                        <constraint firstItem="eMp-xU-89Q" firstAttribute="leading" secondItem="cNh-XB-qvr" secondAttribute="leading" id="WSb-QW-oxW"/>
                                         <constraint firstItem="cqN-2g-QeV" firstAttribute="top" secondItem="cNh-XB-qvr" secondAttribute="topMargin" id="YI6-Sh-Hs4"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="cqN-2g-QeV" secondAttribute="trailing" id="y3S-sO-8CN"/>
-                                        <constraint firstAttribute="trailing" secondItem="eMp-xU-89Q" secondAttribute="trailing" id="zX5-xh-H7m"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptionTextView" destination="eMp-xU-89Q" id="g8F-aZ-JqA"/>
                                     <outlet property="idLabel" destination="Qg2-3X-0Xt" id="yFy-rv-bDO"/>
                                     <outlet property="modifiedLabel" destination="HNu-yG-0rF" id="o0X-xy-uEZ"/>
                                     <outlet property="nameLabel" destination="5Fz-4V-zxc" id="bPV-Sc-OZb"/>
