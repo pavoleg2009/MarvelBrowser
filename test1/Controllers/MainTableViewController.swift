@@ -12,17 +12,25 @@ class MainTableViewController: UITableViewController {
     
     var apiClient = ApiClient.shared
     var characters: [Character] = []
+    
+    let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        //searchController.searchBar.delegate = self
+        
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         initialRequest()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(test(_:)))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(test(_:)))
     }
     
     func initialRequest() {
-        apiClient.getSearchResults(searchTerm: "Spider") { (characters, string) in
+        apiClient.getSearchResults(searchTerm: "S") { (characters, string) in
             self.characters = characters
             self.tableView.reloadData()
         }
@@ -101,15 +109,50 @@ class MainTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showCharacterDetails" {
+            guard let vc = segue.destination as? CharacterDetailsViewController,
+                let selectedIndexPath = tableView.indexPathForSelectedRow
+                else { return }
+            
+            navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+            
+            vc.character = characters[selectedIndexPath.row]
+            
+        }
     }
-    */
 }
+
+extension MainTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentFor(searchTerm: searchController.searchBar.text)
+    }
+    
+    func filterContentFor(searchTerm: String?) {
+        
+        guard let searchTerm = searchTerm else {
+            clearSearch()
+            return
+        }
+        
+        apiClient.getSearchResults(searchTerm: searchTerm) { (characters, error) in
+            self.characters = characters
+            self.tableView.reloadData()
+        }
+    }
+    
+    func clearSearch() {
+        
+    }
+}
+
+//extension MainTableViewController: UISearchBarDelegate {
+//
+//}
 
 

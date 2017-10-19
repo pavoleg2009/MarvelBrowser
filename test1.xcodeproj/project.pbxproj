@@ -12,6 +12,7 @@
 		28A4BA131F98795C00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
 		28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */; };
 		28A4BA1B1F98B20100E9F2A1 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */; };
+		28A4BA1D1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */; };
 		28B932F21F97603200B8D0B7 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9511F96333900318540 /* ApiClientTests.swift */; };
 		28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9791F974C7500318540 /* URLSessionMock.swift */; };
 		28B932FC1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */; };
@@ -53,6 +54,7 @@
 		28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = charactersFakeResponse.json; sourceTree = "<group>"; };
 		28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientAcceptanceTests.swift; sourceTree = "<group>"; };
 		28FAD9231F95D9E300318540 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9261F95D9E300318540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				28FAD9381F95F7F400318540 /* MainTableViewController.swift */,
+				28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				28A4BA101F98751700E9F2A1 /* Character.swift in Sources */,
 				28FAD97C1F9750D900318540 /* ApiClient.swift in Sources */,
 				28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */,
+				28A4BA1D1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift in Sources */,
 				28FAD9601F96371100318540 /* main.swift in Sources */,
 				28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */,
 				28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */,

@@ -5,11 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Marvel Characters-->
         <scene sceneID="4HQ-QI-5BH">
             <objects>
                 <tableViewController id="vaa-11-yOs" customClass="MainTableViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5eb-GP-ccL" id="cNh-XB-qvr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cqN-2g-QeV">
@@ -76,6 +78,7 @@
                                     <outlet property="modifiedLabel" destination="HNu-yG-0rF" id="o0X-xy-uEZ"/>
                                     <outlet property="nameLabel" destination="5Fz-4V-zxc" id="bPV-Sc-OZb"/>
                                     <outlet property="thumbnailImage" destination="lbG-bL-aPR" id="LOa-hp-gL0"/>
+                                    <segue destination="SKM-gV-1bJ" kind="show" identifier="showCharacterDetails" id="XVd-Vw-PAB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,11 +87,54 @@
                             <outlet property="delegate" destination="vaa-11-yOs" id="0Jd-aC-eB3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Hva-Hb-Dq8"/>
+                    <navigationItem key="navigationItem" title="Marvel Characters" id="Hva-Hb-Dq8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AP-6c-58W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="600.79999999999995" y="105.69715142428787"/>
+        </scene>
+        <!--Character Details View Controller-->
+        <scene sceneID="bex-vX-nyu">
+            <objects>
+                <viewController id="SKM-gV-1bJ" customClass="CharacterDetailsViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mL6-0j-f9W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7Z-2D-cJT">
+                                <rect key="frame" x="16" y="80" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g7Z-2D-cJT" secondAttribute="height" multiplier="1:1" id="mKa-XW-tSK"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tE3-aZ-ilC">
+                                <rect key="frame" x="16" y="439" width="343" height="212"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rp2-Un-pp6" firstAttribute="trailing" secondItem="g7Z-2D-cJT" secondAttribute="trailing" constant="16" id="U9j-Xr-af4"/>
+                            <constraint firstItem="rp2-Un-pp6" firstAttribute="bottom" secondItem="tE3-aZ-ilC" secondAttribute="bottom" constant="16" id="XNT-0H-eLh"/>
+                            <constraint firstItem="tE3-aZ-ilC" firstAttribute="top" secondItem="g7Z-2D-cJT" secondAttribute="bottom" constant="16" id="Zrf-U7-XMK"/>
+                            <constraint firstItem="tE3-aZ-ilC" firstAttribute="leading" secondItem="rp2-Un-pp6" secondAttribute="leading" constant="16" id="fXp-os-5eJ"/>
+                            <constraint firstItem="rp2-Un-pp6" firstAttribute="trailing" secondItem="tE3-aZ-ilC" secondAttribute="trailing" constant="16" id="fyt-kR-6HA"/>
+                            <constraint firstItem="g7Z-2D-cJT" firstAttribute="leading" secondItem="rp2-Un-pp6" secondAttribute="leading" constant="16" id="hrK-Ul-gSs"/>
+                            <constraint firstItem="g7Z-2D-cJT" firstAttribute="top" secondItem="rp2-Un-pp6" secondAttribute="top" constant="16" id="r8i-oU-XoO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rp2-Un-pp6"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="tE3-aZ-ilC" id="vzj-lb-94p"/>
+                        <outlet property="thumbnailImage" destination="g7Z-2D-cJT" id="EJ8-jc-02A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9i-yx-Jh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861.5999999999999" y="-58.020989505247378"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jns-Qa-Ezx">
