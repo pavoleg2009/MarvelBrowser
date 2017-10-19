@@ -1,16 +1,25 @@
-
 import Foundation
 
-typealias SearchResult = ([Any]?, String) -> ()
+typealias SearchResult = ([Character], String?) -> ()
 
 class ApiClient {
+    
+    /* API for querying Marvel API (https://developer.marvel.com/)
+     - Run query data task, store results in array of Characters
+     */
+    
+    private static let _shared = ApiClient()
+    static var shared: ApiClient {
+        return _shared
+    }
+    private init(){}
     
     let authClient = MarverlAuthentication()
     var session: URLSessionMockable = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     var errorMessage: String = ""
     
-    var items: [Any] = []
+    var characters: [Character] = []
     
     func getSearchResults(searchTerm: String, completionHandler: @escaping SearchResult) {
         
@@ -27,14 +36,34 @@ class ApiClient {
             } else if let data = data,
             let response = response as? HTTPURLResponse,
                 response.statusCode == 200 {
-//                self.updateSearchResults(data)
+                self.updateSearchResults(data)
                 DispatchQueue.main.async {
-                    completionHandler(self.items, self.errorMessage)
+                    completionHandler(self.characters, self.errorMessage)
                 }
             }
-            
-            
         }
         dataTask?.resume()
+    }
+    
+    func updateSearchResults(_ data: Data) {
+        var jsonResponse: [String:Any]!
+        characters.removeAll()
+        
+        do {
+            jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]
+        } catch let parseError as NSError {
+            errorMessage.append("\(parseError.debugDescription)\n")
+            return
+        }
+        
+        guard
+            let jsonData = jsonResponse["data"] as? [String : Any],
+            let jsonArray = jsonData["results"] as? [[String : Any]]
+        
+        else {
+            errorMessage.append("Could not find array with items in response\n")
+            return
+        }
+        characters = Character.array(jsonArray: jsonArray)
     }
 }

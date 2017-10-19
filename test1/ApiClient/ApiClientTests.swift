@@ -15,10 +15,10 @@ class ApiClientTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = ApiClient()
-        
+        sut = ApiClient.shared
+        // get data from json file
         let testBundle = Bundle(for: type(of: self))
-        let path = testBundle.path(forResource: "seeds1000PrettyPrinted", ofType: "json")
+        let path = testBundle.path(forResource: "charactersFakeResponse", ofType: "json")
         let data = try? Data(contentsOf:URL(fileURLWithPath: path!), options: .mappedIfSafe)
         
         let searchTerm = "Spider"
@@ -38,7 +38,7 @@ class ApiClientTests: XCTestCase {
     func testUpdateResults_ParsesData() {
         let promise = expectation(description: "Status code = 200")
         
-        XCTAssertEqual(sut.items.count, 0, "searchReulsts (items) should be empty before the data task runs.")
+        XCTAssertEqual(sut.characters.count, 0, "searchReulsts (items) should be empty before the data task runs.")
         
         sut.getSearchResults(searchTerm: "Spider") { (_, _) in
             promise.fulfill()
@@ -46,7 +46,7 @@ class ApiClientTests: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
         
-        XCTAssertEqual(sut.items.count, 1000, "Didn't parse 1000 items from fake response")
+        XCTAssertEqual(sut.characters.count, 20, "Didn't parse 20 characters from fake response")
     }
     
 }
