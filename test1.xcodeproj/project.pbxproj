@@ -10,9 +10,9 @@
 		28A4BA101F98751700E9F2A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA0F1F98751700E9F2A1 /* Character.swift */; };
 		28A4BA121F98759D00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
 		28A4BA131F98795C00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
+		28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */; };
 		28B932F21F97603200B8D0B7 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9511F96333900318540 /* ApiClientTests.swift */; };
 		28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9791F974C7500318540 /* URLSessionMock.swift */; };
-		28B932F81F9771A500B8D0B7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B932F61F976C8300B8D0B7 /* City.swift */; };
 		28B932FC1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */; };
 		28FAD9271F95D9E300318540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9261F95D9E300318540 /* AppDelegate.swift */; };
 		28FAD92C1F95D9E300318540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FAD92A1F95D9E300318540 /* Main.storyboard */; };
@@ -50,8 +50,7 @@
 /* Begin PBXFileReference section */
 		28A4BA0F1F98751700E9F2A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = charactersFakeResponse.json; sourceTree = "<group>"; };
-		28B932F61F976C8300B8D0B7 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		28B932F91F97735D00B8D0B7 /* seedsFakeResponse2Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seedsFakeResponse2Items.json; sourceTree = "<group>"; };
+		28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientAcceptanceTests.swift; sourceTree = "<group>"; };
 		28FAD9231F95D9E300318540 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9261F95D9E300318540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +166,6 @@
 				28FAD95B1F96367600318540 /* TestingAppDelegate.swift */,
 				28FAD9461F95FE1000318540 /* Tests-Info.plist */,
 				28FAD9791F974C7500318540 /* URLSessionMock.swift */,
-				28B932F91F97735D00B8D0B7 /* seedsFakeResponse2Items.json */,
 				28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */,
 			);
 			path = TestSupport;
@@ -184,7 +182,6 @@
 		28FAD9741F974A1700318540 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				28B932F61F976C8300B8D0B7 /* City.swift */,
 				28A4BA0F1F98751700E9F2A1 /* Character.swift */,
 			);
 			path = Models;
@@ -195,6 +192,7 @@
 			children = (
 				28FAD92A1F95D9E300318540 /* Main.storyboard */,
 				28FAD92F1F95D9E300318540 /* LaunchScreen.storyboard */,
+				28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,7 +346,7 @@
 				28FAD94C1F960A1900318540 /* ApiKeys.swift in Sources */,
 				28A4BA101F98751700E9F2A1 /* Character.swift in Sources */,
 				28FAD97C1F9750D900318540 /* ApiClient.swift in Sources */,
-				28B932F81F9771A500B8D0B7 /* City.swift in Sources */,
+				28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */,
 				28FAD9601F96371100318540 /* main.swift in Sources */,
 				28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */,
 				28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */,
