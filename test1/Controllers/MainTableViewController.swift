@@ -113,7 +113,7 @@ class MainTableViewController: UITableViewController {
     // MARK: - Navigation
 
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "showCharacterDetails" {
             guard let vc = segue.destination as? CharacterDetailsViewController,

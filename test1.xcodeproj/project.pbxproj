@@ -156,9 +156,9 @@
 		28FAD9501F96327D00318540 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				28FAD9321F95D9E300318540 /* App-Info.plist */,
 				28FAD9261F95D9E300318540 /* AppDelegate.swift */,
 				28FAD9591F96365A00318540 /* main.swift */,
-				28FAD9321F95D9E300318540 /* App-Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -167,10 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				28FAD9691F96384300318540 /* Acceptance-Tests-Info.plist */,
+				28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */,
 				28FAD95B1F96367600318540 /* TestingAppDelegate.swift */,
 				28FAD9461F95FE1000318540 /* Tests-Info.plist */,
 				28FAD9791F974C7500318540 /* URLSessionMock.swift */,
-				28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */,
 			);
 			path = TestSupport;
 			sourceTree = "<group>";
@@ -179,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				28FAD92D1F95D9E300318540 /* Assets.xcassets */,
+				28FAD92F1F95D9E300318540 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -194,9 +195,8 @@
 		28FAD9751F974A2300318540 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				28FAD92A1F95D9E300318540 /* Main.storyboard */,
-				28FAD92F1F95D9E300318540 /* LaunchScreen.storyboard */,
 				28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */,
+				28FAD92A1F95D9E300318540 /* Main.storyboard */,
 				28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */,
 			);
 			path = Views;
@@ -205,8 +205,8 @@
 		28FAD9761F974A2800318540 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28FAD9381F95F7F400318540 /* MainTableViewController.swift */,
 				28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */,
+				28FAD9381F95F7F400318540 /* MainTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
