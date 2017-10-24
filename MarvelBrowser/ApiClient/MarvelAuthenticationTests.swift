@@ -1,7 +1,7 @@
 //  MarvelAuthenticationTests.swift
 
 import XCTest
-@testable import test1
+@testable import MarvelBrowser
 
 class MarvelAuthenticationTests: XCTestCase {
     

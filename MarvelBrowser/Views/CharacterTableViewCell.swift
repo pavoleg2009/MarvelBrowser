@@ -1,6 +1,5 @@
 //
 //  CharacterTableViewCell.swift
-//  test1
 //
 //  Created by Oleg Pavlichenkov on 19/10/2017.
 //  Copyright © 2017 Oleg Pavlichenkov. All rights reserved.

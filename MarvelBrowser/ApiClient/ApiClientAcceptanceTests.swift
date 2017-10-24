@@ -1,5 +1,5 @@
 import XCTest
-@testable import test1
+@testable import MarvelBrowser
 
 class ApiClientAcceptanceTests: XCTestCase {
     

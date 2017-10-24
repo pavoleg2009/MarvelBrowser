@@ -1,6 +1,5 @@
 //
 //  MarverlAuthentication.swift
-//  test1
 //
 //  Created by Oleg Pavlichenkov on 17/10/2017.
 //  Copyright © 2017 Oleg Pavlichenkov. All rights reserved.

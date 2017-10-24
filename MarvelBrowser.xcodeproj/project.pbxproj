@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280FE1481F9FC570006D3771 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */; };
+		280FE1491F9FC570006D3771 /* MarvelAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */; };
 		28A4BA101F98751700E9F2A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA0F1F98751700E9F2A1 /* Character.swift */; };
 		28A4BA121F98759D00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
 		28A4BA131F98795C00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
 		28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */; };
 		28A4BA1B1F98B20100E9F2A1 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */; };
 		28A4BA1D1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */; };
-		28B932F21F97603200B8D0B7 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9511F96333900318540 /* ApiClientTests.swift */; };
 		28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9791F974C7500318540 /* URLSessionMock.swift */; };
 		28B932FC1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */; };
 		28FAD9271F95D9E300318540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9261F95D9E300318540 /* AppDelegate.swift */; };
@@ -23,7 +24,6 @@
 		28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9381F95F7F400318540 /* MainTableViewController.swift */; };
 		28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */; };
 		28FAD94C1F960A1900318540 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93B1F95FC0D00318540 /* ApiKeys.swift */; };
-		28FAD9581F9633FA00318540 /* MarvelAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9531F96335400318540 /* MarvelAuthenticationTests.swift */; };
 		28FAD95E1F9636FA00318540 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD95B1F96367600318540 /* TestingAppDelegate.swift */; };
 		28FAD9601F96371100318540 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9591F96365A00318540 /* main.swift */; };
 		28FAD96F1F9638C100318540 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD95B1F96367600318540 /* TestingAppDelegate.swift */; };
@@ -50,13 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAuthenticationTests.swift; sourceTree = "<group>"; };
 		28A4BA0F1F98751700E9F2A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = charactersFakeResponse.json; sourceTree = "<group>"; };
 		28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		28A4BA1C1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientAcceptanceTests.swift; sourceTree = "<group>"; };
-		28FAD9231F95D9E300318540 /* test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FAD9231F95D9E300318540 /* MarvelBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9261F95D9E300318540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28FAD92B1F95D9E300318540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28FAD92D1F95D9E300318540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,14 +67,12 @@
 		28FAD9381F95F7F400318540 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		28FAD93B1F95FC0D00318540 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarverlAuthentication.swift; sourceTree = "<group>"; };
-		28FAD9421F95FE1000318540 /* test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FAD9421F95FE1000318540 /* MarvelBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9461F95FE1000318540 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		28FAD94D1F96226300318540 /* test1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test1-Bridging-Header.h"; sourceTree = "<group>"; };
-		28FAD9511F96333900318540 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiClientTests.swift; path = test1/ApiClient/ApiClientTests.swift; sourceTree = SOURCE_ROOT; };
-		28FAD9531F96335400318540 /* MarvelAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MarvelAuthenticationTests.swift; path = test1/ApiClient/MarvelAuthenticationTests.swift; sourceTree = SOURCE_ROOT; };
+		28FAD94D1F96226300318540 /* MarvelBrowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
 		28FAD9591F96365A00318540 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		28FAD95B1F96367600318540 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
-		28FAD9651F96384300318540 /* test1AcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1AcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FAD9651F96384300318540 /* MarvelBrowserAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelBrowserAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9691F96384300318540 /* Acceptance-Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acceptance-Tests-Info.plist"; sourceTree = "<group>"; };
 		28FAD9711F963C9800318540 /* MarvelAuthenticationAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAuthenticationAcceptanceTests.swift; sourceTree = "<group>"; };
 		28FAD9771F974B8900318540 /* URLSessionMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMockable.swift; sourceTree = "<group>"; };
@@ -108,23 +108,23 @@
 		28FAD91A1F95D9E300318540 = {
 			isa = PBXGroup;
 			children = (
-				28FAD9251F95D9E300318540 /* test1 */,
+				28FAD9251F95D9E300318540 /* MarvelBrowser */,
 				28FAD9241F95D9E300318540 /* Products */,
-				28FAD94D1F96226300318540 /* test1-Bridging-Header.h */,
+				28FAD94D1F96226300318540 /* MarvelBrowser-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		28FAD9241F95D9E300318540 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28FAD9231F95D9E300318540 /* test1.app */,
-				28FAD9421F95FE1000318540 /* test1Tests.xctest */,
-				28FAD9651F96384300318540 /* test1AcceptanceTests.xctest */,
+				28FAD9231F95D9E300318540 /* MarvelBrowser.app */,
+				28FAD9421F95FE1000318540 /* MarvelBrowserTests.xctest */,
+				28FAD9651F96384300318540 /* MarvelBrowserAcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28FAD9251F95D9E300318540 /* test1 */ = {
+		28FAD9251F95D9E300318540 /* MarvelBrowser */ = {
 			isa = PBXGroup;
 			children = (
 				28FAD93A1F95FA9500318540 /* ApiClient */,
@@ -135,7 +135,7 @@
 				28FAD9571F9633DA00318540 /* TestSupport */,
 				28FAD9751F974A2300318540 /* Views */,
 			);
-			path = test1;
+			path = MarvelBrowser;
 			sourceTree = "<group>";
 		};
 		28FAD93A1F95FA9500318540 /* ApiClient */ = {
@@ -143,10 +143,10 @@
 			children = (
 				28FAD97B1F9750D900318540 /* ApiClient.swift */,
 				28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */,
-				28FAD9511F96333900318540 /* ApiClientTests.swift */,
+				280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */,
 				28FAD93B1F95FC0D00318540 /* ApiKeys.swift */,
 				28FAD9711F963C9800318540 /* MarvelAuthenticationAcceptanceTests.swift */,
-				28FAD9531F96335400318540 /* MarvelAuthenticationTests.swift */,
+				280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */,
 				28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */,
 				28FAD9771F974B8900318540 /* URLSessionMockable.swift */,
 			);
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28FAD9221F95D9E300318540 /* test1 */ = {
+		28FAD9221F95D9E300318540 /* MarvelBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28FAD9351F95D9E300318540 /* Build configuration list for PBXNativeTarget "test1" */;
+			buildConfigurationList = 28FAD9351F95D9E300318540 /* Build configuration list for PBXNativeTarget "MarvelBrowser" */;
 			buildPhases = (
 				28FAD91F1F95D9E300318540 /* Sources */,
 				28FAD9201F95D9E300318540 /* Frameworks */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = test1;
+			name = MarvelBrowser;
 			productName = test1;
-			productReference = 28FAD9231F95D9E300318540 /* test1.app */;
+			productReference = 28FAD9231F95D9E300318540 /* MarvelBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28FAD9411F95FE1000318540 /* test1Tests */ = {
+		28FAD9411F95FE1000318540 /* MarvelBrowserTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "test1Tests" */;
+			buildConfigurationList = 28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "MarvelBrowserTests" */;
 			buildPhases = (
 				28FAD93E1F95FE1000318540 /* Sources */,
 				28FAD93F1F95FE1000318540 /* Frameworks */,
@@ -244,14 +244,14 @@
 			dependencies = (
 				28FAD9481F95FE1000318540 /* PBXTargetDependency */,
 			);
-			name = test1Tests;
+			name = MarvelBrowserTests;
 			productName = test1Tests;
-			productReference = 28FAD9421F95FE1000318540 /* test1Tests.xctest */;
+			productReference = 28FAD9421F95FE1000318540 /* MarvelBrowserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28FAD9641F96384300318540 /* test1AcceptanceTests */ = {
+		28FAD9641F96384300318540 /* MarvelBrowserAcceptanceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28FAD96C1F96384300318540 /* Build configuration list for PBXNativeTarget "test1AcceptanceTests" */;
+			buildConfigurationList = 28FAD96C1F96384300318540 /* Build configuration list for PBXNativeTarget "MarvelBrowserAcceptanceTests" */;
 			buildPhases = (
 				28FAD9611F96384300318540 /* Sources */,
 				28FAD9621F96384300318540 /* Frameworks */,
@@ -262,9 +262,9 @@
 			dependencies = (
 				28FAD96B1F96384300318540 /* PBXTargetDependency */,
 			);
-			name = test1AcceptanceTests;
+			name = MarvelBrowserAcceptanceTests;
 			productName = test1AcceptanceTests;
-			productReference = 28FAD9651F96384300318540 /* test1AcceptanceTests.xctest */;
+			productReference = 28FAD9651F96384300318540 /* MarvelBrowserAcceptanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28FAD91E1F95D9E300318540 /* Build configuration list for PBXProject "test1" */;
+			buildConfigurationList = 28FAD91E1F95D9E300318540 /* Build configuration list for PBXProject "MarvelBrowser" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -307,9 +307,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28FAD9221F95D9E300318540 /* test1 */,
-				28FAD9411F95FE1000318540 /* test1Tests */,
-				28FAD9641F96384300318540 /* test1AcceptanceTests */,
+				28FAD9221F95D9E300318540 /* MarvelBrowser */,
+				28FAD9411F95FE1000318540 /* MarvelBrowserTests */,
+				28FAD9641F96384300318540 /* MarvelBrowserAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,17 +348,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FAD9271F95D9E300318540 /* AppDelegate.swift in Sources */,
-				28FAD94C1F960A1900318540 /* ApiKeys.swift in Sources */,
-				28A4BA101F98751700E9F2A1 /* Character.swift in Sources */,
 				28FAD97C1F9750D900318540 /* ApiClient.swift in Sources */,
-				28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */,
+				28FAD94C1F960A1900318540 /* ApiKeys.swift in Sources */,
+				28FAD9271F95D9E300318540 /* AppDelegate.swift in Sources */,
+				28A4BA101F98751700E9F2A1 /* Character.swift in Sources */,
 				28A4BA1D1F98BF1B00E9F2A1 /* CharacterDetailsViewController.swift in Sources */,
+				28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */,
 				28FAD9601F96371100318540 /* main.swift in Sources */,
 				28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */,
 				28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */,
-				28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */,
 				28A4BA1B1F98B20100E9F2A1 /* UIImageView+URL.swift in Sources */,
+				28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */,
 				28FAD9781F974B8900318540 /* URLSessionMockable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B932F21F97603200B8D0B7 /* ApiClientTests.swift in Sources */,
-				28FAD9581F9633FA00318540 /* MarvelAuthenticationTests.swift in Sources */,
+				280FE1481F9FC570006D3771 /* ApiClientTests.swift in Sources */,
+				280FE1491F9FC570006D3771 /* MarvelAuthenticationTests.swift in Sources */,
 				28FAD95E1F9636FA00318540 /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,12 +388,12 @@
 /* Begin PBXTargetDependency section */
 		28FAD9481F95FE1000318540 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28FAD9221F95D9E300318540 /* test1 */;
+			target = 28FAD9221F95D9E300318540 /* MarvelBrowser */;
 			targetProxy = 28FAD9471F95FE1000318540 /* PBXContainerItemProxy */;
 		};
 		28FAD96B1F96384300318540 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28FAD9221F95D9E300318540 /* test1 */;
+			target = 28FAD9221F95D9E300318540 /* MarvelBrowser */;
 			targetProxy = 28FAD96A1F96384300318540 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -532,11 +532,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/App/App-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/App/App-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "test1-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelBrowser-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,11 +550,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/App/App-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/App/App-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "test1-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelBrowser-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,13 +566,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/TestSupport/Tests-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/TestSupport/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowserTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
 			};
 			name = Debug;
 		};
@@ -582,13 +582,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/TestSupport/Tests-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/TestSupport/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowserTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
 			};
 			name = Release;
 		};
@@ -598,13 +598,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/TestSupport/Acceptance-Tests-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/TestSupport/Acceptance-Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1AcceptanceTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowserAcceptanceTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
 			};
 			name = Debug;
 		};
@@ -614,20 +614,20 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y4DUJVCEZ;
-				INFOPLIST_FILE = "test1/TestSupport/Acceptance-Tests-Info.plist";
+				INFOPLIST_FILE = "MarvelBrowser/TestSupport/Acceptance-Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.test1AcceptanceTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.just-eng.MarvelBrowserAcceptanceTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test1.app/test1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28FAD91E1F95D9E300318540 /* Build configuration list for PBXProject "test1" */ = {
+		28FAD91E1F95D9E300318540 /* Build configuration list for PBXProject "MarvelBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28FAD9331F95D9E300318540 /* Debug */,
@@ -636,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28FAD9351F95D9E300318540 /* Build configuration list for PBXNativeTarget "test1" */ = {
+		28FAD9351F95D9E300318540 /* Build configuration list for PBXNativeTarget "MarvelBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28FAD9361F95D9E300318540 /* Debug */,
@@ -645,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "test1Tests" */ = {
+		28FAD9491F95FE1100318540 /* Build configuration list for PBXNativeTarget "MarvelBrowserTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28FAD94A1F95FE1100318540 /* Debug */,
@@ -654,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28FAD96C1F96384300318540 /* Build configuration list for PBXNativeTarget "test1AcceptanceTests" */ = {
+		28FAD96C1F96384300318540 /* Build configuration list for PBXNativeTarget "MarvelBrowserAcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28FAD96D1F96384300318540 /* Debug */,

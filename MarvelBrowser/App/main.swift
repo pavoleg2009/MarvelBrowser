@@ -2,7 +2,7 @@
 
 import UIKit
 
-let testTargetName = "test1Tests"
+let testTargetName = "MarvelBrowserTests"
 
 let appDelegateClass: AnyClass? = NSClassFromString("\(testTargetName).TestingAppDelegate") ?? AppDelegate.self
 

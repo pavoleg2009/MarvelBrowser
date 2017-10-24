@@ -1,13 +1,12 @@
 //
 //  MarvelAuthenticationAcceptanceTests.swift
-//  test1AcceptanceTests
 //
 //  Created by Oleg Pavlichenkov on 17/10/2017.
 //  Copyright © 2017 Oleg Pavlichenkov. All rights reserved.
 //
 
 import XCTest
-@testable import test1
+@testable import MarvelBrowser
 
 class MarvelAuthenticationAcceptanceTests: XCTestCase {
     
