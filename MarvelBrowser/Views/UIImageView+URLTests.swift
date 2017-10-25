@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import MarvelBrowser
 
 class UIImageView_URLTests: XCTestCase {
     
@@ -20,16 +21,18 @@ class UIImageView_URLTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPosSetImageWithNilUrl_ShouldReturnNil() {
+        // Arrange
+        let sutImageView = UIImageView()
+        
+        // Act
+        let dataTask = sutImageView.pos_setImage(url: nil)
+        
+        // Assert
+        XCTAssertNil(dataTask)
+        XCTAssertNil(sutImageView.image)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
     
 }
