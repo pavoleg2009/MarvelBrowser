@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		280FE1481F9FC570006D3771 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */; };
 		280FE1491F9FC570006D3771 /* MarvelAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */; };
+		280FE14B1FA074C8006D3771 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE14A1FA074C8006D3771 /* CharacterTests.swift */; };
+		2817D0E41FA0D69400ABB591 /* UIImageView+URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817D0E31FA0D69400ABB591 /* UIImageView+URLTests.swift */; };
 		28A4BA101F98751700E9F2A1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4BA0F1F98751700E9F2A1 /* Character.swift */; };
 		28A4BA121F98759D00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
 		28A4BA131F98795C00E9F2A1 /* charactersFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */; };
@@ -22,7 +24,7 @@
 		28FAD92E1F95D9E300318540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FAD92D1F95D9E300318540 /* Assets.xcassets */; };
 		28FAD9311F95D9E300318540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FAD92F1F95D9E300318540 /* LaunchScreen.storyboard */; };
 		28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9381F95F7F400318540 /* MainTableViewController.swift */; };
-		28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */; };
+		28FAD93D1F95FD3A00318540 /* MarvelAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93C1F95FD3A00318540 /* MarvelAuthentication.swift */; };
 		28FAD94C1F960A1900318540 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD93B1F95FC0D00318540 /* ApiKeys.swift */; };
 		28FAD95E1F9636FA00318540 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD95B1F96367600318540 /* TestingAppDelegate.swift */; };
 		28FAD9601F96371100318540 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAD9591F96365A00318540 /* main.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
 		280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAuthenticationTests.swift; sourceTree = "<group>"; };
+		280FE14A1FA074C8006D3771 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
+		2817D0E31FA0D69400ABB591 /* UIImageView+URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URLTests.swift"; sourceTree = "<group>"; };
 		28A4BA0F1F98751700E9F2A1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		28A4BA111F98759D00E9F2A1 /* charactersFakeResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = charactersFakeResponse.json; sourceTree = "<group>"; };
 		28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		28FAD9321F95D9E300318540 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
 		28FAD9381F95F7F400318540 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		28FAD93B1F95FC0D00318540 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
-		28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarverlAuthentication.swift; sourceTree = "<group>"; };
+		28FAD93C1F95FD3A00318540 /* MarvelAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAuthentication.swift; sourceTree = "<group>"; };
 		28FAD9421F95FE1000318540 /* MarvelBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FAD9461F95FE1000318540 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		28FAD94D1F96226300318540 /* MarvelBrowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -145,9 +149,9 @@
 				28B932FB1F97758800B8D0B7 /* ApiClientAcceptanceTests.swift */,
 				280FE1441F9FC4ED006D3771 /* ApiClientTests.swift */,
 				28FAD93B1F95FC0D00318540 /* ApiKeys.swift */,
+				28FAD93C1F95FD3A00318540 /* MarvelAuthentication.swift */,
 				28FAD9711F963C9800318540 /* MarvelAuthenticationAcceptanceTests.swift */,
 				280FE1461F9FC4FE006D3771 /* MarvelAuthenticationTests.swift */,
-				28FAD93C1F95FD3A00318540 /* MarverlAuthentication.swift */,
 				28FAD9771F974B8900318540 /* URLSessionMockable.swift */,
 			);
 			path = ApiClient;
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				28A4BA0F1F98751700E9F2A1 /* Character.swift */,
+				280FE14A1FA074C8006D3771 /* CharacterTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				28A4BA161F989FC500E9F2A1 /* CharacterTableViewCell.swift */,
 				28FAD92A1F95D9E300318540 /* Main.storyboard */,
 				28A4BA1A1F98B20100E9F2A1 /* UIImageView+URL.swift */,
+				2817D0E31FA0D69400ABB591 /* UIImageView+URLTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,7 +362,7 @@
 				28A4BA171F989FC500E9F2A1 /* CharacterTableViewCell.swift in Sources */,
 				28FAD9601F96371100318540 /* main.swift in Sources */,
 				28FAD9391F95F7F400318540 /* MainTableViewController.swift in Sources */,
-				28FAD93D1F95FD3A00318540 /* MarverlAuthentication.swift in Sources */,
+				28FAD93D1F95FD3A00318540 /* MarvelAuthentication.swift in Sources */,
 				28A4BA1B1F98B20100E9F2A1 /* UIImageView+URL.swift in Sources */,
 				28B932F41F97622000B8D0B7 /* URLSessionMock.swift in Sources */,
 				28FAD9781F974B8900318540 /* URLSessionMockable.swift in Sources */,
@@ -367,9 +373,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2817D0E41FA0D69400ABB591 /* UIImageView+URLTests.swift in Sources */,
 				280FE1481F9FC570006D3771 /* ApiClientTests.swift in Sources */,
 				280FE1491F9FC570006D3771 /* MarvelAuthenticationTests.swift in Sources */,
 				28FAD95E1F9636FA00318540 /* TestingAppDelegate.swift in Sources */,
+				280FE14B1FA074C8006D3771 /* CharacterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

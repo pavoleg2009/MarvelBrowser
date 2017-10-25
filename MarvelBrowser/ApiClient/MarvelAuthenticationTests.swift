@@ -14,7 +14,7 @@ class MarvelAuthenticationTests: XCTestCase {
     }
     
     override func tearDown() {
-        // sut = nil
+        sut = nil
         super.tearDown()
     }
     

@@ -55,14 +55,16 @@ extension Character {
             let characterDescription = json[Character.ApiKeys.characterDescription] as? String,
             let modifiedString = json[Character.ApiKeys.modified] as? String,
             let modified = Character.stringToDateFormatter.date(from: modifiedString),
-            let thumbnail = (json[Character.ApiKeys.thumbnail] as? [String:String])
+            let thumbnail = (json[Character.ApiKeys.thumbnail] as? [String:Any]),
+            let thumbnailPath = thumbnail["path"] as? String,
+            let thumbnailExtension = thumbnail["extension"] as? String
             else { return nil }
         
         self.init(id: id,
                   name: name,
                   characterDescription: characterDescription,
                   modified: modified,
-                  thumbnailPath: "\(thumbnail["path"] ?? "").\(thumbnail["extension"] ?? "")"
+                  thumbnailPath: "\(thumbnailPath).\(thumbnailExtension)"
         )
     }
     
@@ -83,8 +85,9 @@ extension Character {
         static let name = "name"
         static let characterDescription = "description"
         static let modified = "modified"
-        //
         static let thumbnail = "thumbnail"
+        static let thumbnailPath = "path"
+        static let thumbnailExtension = "extension"
     }
 }
 
